@@ -6,4 +6,25 @@ The script has to :
 - Transform the data
 - Load the transformed data into a tar file
 
-The python script 
+The python script is here : [etl_data_pipeline_airflow.py](https://github.com/pgrondein/etl_data_pipeline_airflow/blob/09fce008cebd6028dcf3a1cd920f5c9718206aa2/etl_pipeline_dag.py)
+
+Then we can 
+- Submit the DAG :
+
+```markdown
+cp process_web_log.py $AIRFLOW_HOME/dags
+```
+
+- Verify that our DAG got submitted
+
+```markdown
+airflow dags list
+```
+
+- ****Unpause the DAG****
+
+```markdown
+airflow dags unpause process_web_log
+```
+
+1. ****Monitor the DAG****
