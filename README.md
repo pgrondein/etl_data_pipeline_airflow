@@ -1,3 +1,4 @@
+![Untitled](https://github.com/pgrondein/etl_data_pipeline_airflow/assets/113172845/0b165796-9719-4177-87a1-9cecc3199419)
 # Design of an ETL & Data Pipelines with Apache Airflow
 Pipeline that analyzes the web server log file, extracts the required lines and fields, transforms, and load (append to an existing file.)
 
